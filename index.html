@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+
+    <body>
+        <div class="container">
+            <header>
+                <h1 id="title">Survey Form</h1>
+                <p id="description" class="description">Thank you to help us improve user experience.</p>
+            </header>
+            <form id="survey-form">
+                <div class="form-group">
+                    <label id="name-label" for="name">Enter Your Name: 
+                        <input placeholder="Enter your name" id="name" name="name" type="text" required />
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label for="email" id="email-label">Enter Your Email: 
+                        <input placeholder="Enter your email" id="email" name="email" type="email" required />
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label for="number" id="number-label">Enter your age: <input placeholder="Age"
+                            id="number" name="number" type="number" min="12" max="75" required />
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label for="identity">Which option discribes your correct identity?
+                        <select id="dropdown" name="identity">
+                            <option value="">(select one)</option>
+                            <option value="Student">Student</option>
+                            <option value="Teacher">Teacher</option>
+                            <option value="Employed">Employed</option>
+                            <option value="Prefer not to say">Prefer not to say</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </label></div>
+                <div class="form-group">
+                    <legend>Would you recommend this to your friends?</legend>
+                    <label for="absolutely">
+                        <input id="absolutely" type="radio" name="recommend" class="inline" value="Absolutely" checked />Absolutely</label>
+                    <label for="sure">
+                        <input id="sure" type="radio" name="recommend" class="inline" value="Sure"/>Sure</label>
+                    <label for="not-sure">
+                        <input id="not-sure" type="radio" name="recommend" class="inline" value="Not Sure"/>Not Sure</label>
+                    <label for="absolutely-not">
+                        <input id="absolutely-not" type="radio" name="recommend" class="inline" value="Absolutely-Not"/>Absolutely-Not</label>
+                </div>
+                <div class="form-group">
+                    <legend>What did you like the most about our website?</legend>
+                    <label for="free"></label><input id="free" type="checkbox" name="liking" value="free">Free</label>
+                    <label for="user-friendly"></label><input id="user-friendly" type="checkbox" name="liking" value="user-friendly">User Friendly</label>
+                    <label for="easy-access"></label><input id="easy-access" type="checkbox" name="liking" value="easy-access">Easy Access</label>
+                    <label for="projects"></label><input id="projects" type="checkbox" name="liking" value="projects">Projects</label>
+                    <label for="others"></label><input id="others" type="checkbox" name="liking" value="others">Others</label>
+                </div>
+                <div class="form-group">
+                    <label for="comments">Any comments or suggestions?
+                        <textarea id="comments" name="comments" rows="4" cols="30" placeholder="Please feel free to leave any doubts or suggestions..."></textarea>
+                    </label>
+                </div>
+                <input id="submit" type="submit" value="Submit" />
+            </form>
+
+        </div>
+        <footer>
+            <p class="Created">Created by Vatsal Patel</p>
+            <p class="Contact">Contact me: <a href="https://www.linkedin.com/in/vatsal-patel-b249972b8/">LinkedIn</a> <a href="https://github.com/Vatsal-Patel-09">GitHub</a> <a href="https://x.com/Vatsal_Patel__">X</a> <a href="https://www.instagram.com/vatsal_patel_09/">Instagram</a></p>
+        </footer>
+    </body>
+    
+</html>
